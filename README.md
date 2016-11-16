@@ -15,6 +15,8 @@ The Climate Change Dataset on Kaggle contains several files with data for land a
 
 I chose to use the file GlobalTemperatures.csv, which contains global average land temperatures in celsius for each month from 1750-2015.
 
-First, I cleaned the data using the script clean_data.py to produce a .csv file with features that I wanted TPOT to use and no missing data. The output of clean_data.py is cleaned_globaldata.csv.
+First, I cleaned the data using the script clean_data.py to produce a .csv file with features that I wanted TPOT to use and no missing data. Here, I also renamed the target variable as 'class'. The output of clean_data.py is cleaned_globaldata.csv. 
 
 Second, I created a "fake" .csv file containing the years and months for which I wanted to make temperature predictions. This .csv file is called global_test.csv. Because the original data only runs until the year 2015, I chose to predict temperatures for 2016-2020. 
+
+Third, I created a script that read in the file containing the cleaned temperature data (cleaned_globaldata.csv), and ran tpot to create a machine learning pipeline for predicting temperatures. This script also takes the test file of dates for which the temperature should be predicted (global_test.csv), and outputs a results file with these predictions. 
