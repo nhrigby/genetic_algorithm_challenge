@@ -1,0 +1,34 @@
+Generation 1 - Current Pareto front scores:
+1	0.7947044339912042	XGBRegressor(input_matrix, 13, 33, 0.46000000000000002, 12.0)
+2	0.7680041233907161	KNeighborsRegressor(StandardScaler(input_matrix), 25, 21)
+
+Generation 2 - Current Pareto front scores:
+1	0.7947044339912042	XGBRegressor(input_matrix, 13, 33, 0.46000000000000002, 12.0)
+2	0.7680041233907161	KNeighborsRegressor(StandardScaler(input_matrix), 25, 21)
+
+Generation 3 - Current Pareto front scores:
+1	0.7255654671337387	GradientBoostingRegressor(input_matrix, 0.14000000000000001, 0.11)
+
+Generation 4 - Current Pareto front scores:
+1	0.7255654671337387	GradientBoostingRegressor(input_matrix, 0.14000000000000001, 0.11)
+
+Generation 5 - Current Pareto front scores:
+1	0.7255654671337387	GradientBoostingRegressor(input_matrix, 0.14000000000000001, 0.11)
+
+Generation 6 - Current Pareto front scores:
+1	0.7255654671337387	GradientBoostingRegressor(input_matrix, 0.14000000000000001, 0.11)
+2	0.7226996007792549	GradientBoostingRegressor(VarianceThreshold(input_matrix, 1.0), 0.14000000000000001, 0.11)
+
+Generation 7 - Current Pareto front scores:
+1	0.6701367221963048	GradientBoostingRegressor(input_matrix, 0.029999999999999999, 0.71999999999999997)
+
+Generation 8 - Current Pareto front scores:
+1	0.6701367221963048	GradientBoostingRegressor(input_matrix, 0.029999999999999999, 0.71999999999999997)
+
+Generation 9 - Current Pareto front scores:
+1	0.6701367221963048	GradientBoostingRegressor(input_matrix, 0.029999999999999999, 0.71999999999999997)
+
+Generation 10 - Current Pareto front scores:
+1	0.6701165278701522	GradientBoostingRegressor(CombineDFs(input_matrix, input_matrix), 0.029999999999999999, 0.71999999999999997)
+
+TPOT score: 0.6283690079003942
