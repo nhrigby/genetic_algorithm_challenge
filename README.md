@@ -21,7 +21,9 @@ I chose to use the file, GlobalTemperatures.csv, which contains global average l
 
 2. I created a "fake" .csv file containing the years and months for which I wanted to make temperature predictions. This .csv file is called global_test.csv. The original data only runs until the year 2015, so in order to predict temperatures for the next 5 years, my test file contains dates for 2016-2020. 
 
-3. I wrote a script (tpot-climate.py) that read in the cleaned temperature data (cleaned_globaldata.csv), and applied the TPOT library to create a machine learning pipeline for predicting temperatures. This script also takes the test file of dates for which the temperature should be predicted (global_test.csv), and outputs a results file (climate_results.csv) with these predictions. It also outputs the TPOT optimized pipeline to climate_pipeline.py.
+3. I wrote a script (tpot-climate.py) that read in the cleaned temperature data (cleaned_globaldata.csv), and applied the TPOT library to create a machine learning pipeline for predicting temperatures. This script also takes the test file of dates for which the temperature should be predicted (global_test.csv), and outputs a results file (climate_results.csv) with these predictions. It also outputs the TPOT optimized pipeline to climate_pipeline.py. The file output.txt is the standard out from running the tpot-climate.py script.
+
+4. Finally I made some visualizations to view how well the TPOT optimized pipeline worked. 
 
 
 
