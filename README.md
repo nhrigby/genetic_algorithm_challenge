@@ -15,7 +15,7 @@ The Climate Change Dataset on Kaggle contains several data files for land and oc
 
 **What will the monthly global average temperatures be for the next 5 years?**
 
-I chose to use the file, GlobalTemperatures.csv, which contains global average land temperatures in celsius for months from 1750-2015. Here is my process:
+I chose to use the file, [GlobalTemperatures.csv](GlobalTemperatures.csv), which contains global average land temperatures in celsius for months from 1750-2015. Here is my process:
 
 1. I cleaned the data using the script clean_data.py to produce a .csv file with features that I wanted TPOT to use and no missing data. The main feature I was interested in was the date (dt, in the original data file). I split the date column in to year, month and day. Here, I also renamed the target variable (LandAverageTemperature) as 'class'. The output of clean_data.py is cleaned_globaldata.csv.
 
