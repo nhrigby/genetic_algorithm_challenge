@@ -32,20 +32,32 @@ Results
 
 The resulting optimized pipeline from TPOT implemented FeatureAgglomeration and GradientBoostingRegressor, scoring 0.6283690079003942 MSE on the cross-validation portion of the training data. 
 
-The original data set (cleaned), shows that the average, yearly, global land temperature has been gradually increasing over time.
+The original data set (cleaned), shows that the global land temperature has been gradually increasing over time (averaged by year, below).
 
 ![YearlyOriginal.png](YearlyOriginal.png)
 
+When we compare the original temperature data to TPOT's predictions, we see that TPOT does a pretty good job predicting global temperatures (averaged by year, below).
+
+![YearlyPredicted.png](YearlyPredicted.png)
+
+Finally, to answer the original question, we can look at the monthly temperatures for the next 5 years. These were predicted by the script tpot-climate.py.
+
+![MonthlyPredicted.png](MonthlyPredicted.png)
+
+
 Files in this repository
 =======================
-GlobalTemperatures.csv
-clean_data.py
-cleaned_globaldata.csv
-climate_pipeline.py
-climate_results.csv
-global_test.csv
-original_data_predictions.csv
-output.txt
-predict_current.py
-tpot-climate.py
-visualizations.ipynb
+* [GlobalTemperatures.csv](GlobalTemperatures.csv) - Original data file of monthly average global land and ocean temperatures downloaded from Kaggle
+* [MonthlyPredicted.png](MonthlyPredicted.png) - Figure of monthly temperatures for recent years predicted by TPOT
+* [YearlyOriginal.png](YearlyOriginal.png) - Figure of global temperatures, averaged by year, from the cleaned data file
+* [YearlyPredicted.png](YearlyPredicted.png) - Figure of global temperatures, averaged by year, for original and predicted values
+* [clean_data.py](clean_data.py) - Python script I used to clean the original data file, GlobalTemperatures.csv.
+* [cleaned_globaldata.csv](cleaned_globaldata.csv) - Output from clean_data.py. Contains cleaned data from original data file.
+* [climate_pipeline.py](climate_pipeline.py) - Exported python script output from tpot-climate.py	containing the TPOT optimized pipeline
+* [climate_results.csv](climate_results.csv) - Output from tpot-climate.py. Contains temperature predictions for next 5 years.
+* [global_test.csv](global_test.csv) - 'Fake' data file used as testing set, for making 5 year future prediction
+* [original_data_predictions.csv](original_data_predictions.csv) - Output from predict_current.py. Contains orininal and TPOT predicted global monthly temperatures.
+* [output.txt](output.txt) - Standard out output from running tpot-climate.py
+* [predict_current.py](predict_current.py) - Python code I used to run TPOT on cleaned original data. Based on pipeline from climate_pipeline.py.	
+* [tpot-climate.py](tpot-climate.py) - Python code I used to run TPOT on training and test data.
+* [visualizations.ipynb](visualizations.ipynb) - Jupyter notebook of code I used to create the figures.
