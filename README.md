@@ -34,7 +34,7 @@ The resulting optimized pipeline from TPOT implemented FeatureAgglomeration and 
 
 The original data set (cleaned), shows that the average, yearly, global land temperature has been gradually increasing over time.
 
-
+![YearlyOriginal.png](YearlyOriginal.png)
 
 Files in this repository
 =======================
